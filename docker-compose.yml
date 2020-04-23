@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  test_byndy:
+    image: ${DOCKER_REGISTRY-}testbyndy
+    build:
+      context: .
+      dockerfile: Dockerfile
